@@ -1,0 +1,52 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+
+  &__logo {
+    color: $accent-color;
+    font-family: 'Raleway', cursive;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+  }
+  &__logo {
+    width: 145px;
+  }
+  & .container {
+    display: flex;
+    align-items: baseline;
+    display: block;
+    background-color: #2f303a;
+  }
+  &__logo-studio {
+    color: $primary-bg-color;
+  }
+}
+.address {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: $primary-bg-color;
+
+  &__title {
+    margin-top: 28px;
+    font-style: normal;
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    margin-bottom: 60px;
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+  &__contact &__item:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}

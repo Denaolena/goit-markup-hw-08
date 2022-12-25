@@ -1,0 +1,38 @@
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  &__title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+  }
+  &__list {
+    @extend %center;
+  }
+
+  &__link {
+    @extend %center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border 250ms $timing-function;
+    &:hover {
+      border: 1px solid $accent-color;
+    }
+    &:hover svg {
+      fill: $accent-color;
+    }
+  }
+  &__icon {
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+    transition: fill 250ms $timing-function;
+  }
+  &__list &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}

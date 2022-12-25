@@ -1,0 +1,44 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  &__item {
+    margin-left: 50px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    color: $title-text-color;
+    fill: $title-text-color;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 2%;
+    text-decoration: none;
+    transition: fill 250ms $timing-function;
+    &:hover {
+      fill: $accent-color;
+    }
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__icon-envelop:hover {
+    fill: $accent-color;
+    & .icon-smartphone:hover {
+      fill: $accent-color;
+    }
+  }
+  &__icon-smartphone {
+    margin-right: 10px;
+    width: 10px;
+    height: 16px;
+  }
+  &__icon-envelope {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
+}
