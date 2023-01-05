@@ -17,7 +17,8 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   &__lable,
   .comment-label {
@@ -66,9 +67,6 @@
     }
   }
 }
-// .modal:focus-within {
-//   color: $accent-color;
-// }
 
 .comment::placeholder {
   font-size: 12px;
@@ -97,8 +95,8 @@ textarea {
 .policy {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.6;
   letter-spacing: 0.03em;
   color: $title-text-color;
 }
@@ -119,5 +117,5 @@ textarea {
 .policy__check {
   border-radius: 2px;
   border: 2px solid $primary-text-color;
-  margin-right: 7px;
+  margin-right: 8px;
 }

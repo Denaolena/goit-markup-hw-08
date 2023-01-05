@@ -23,38 +23,65 @@
         <nav class="page-header__main-nav">
           <a href="index.html" class="logo">Web<span class="log-studio">Studio</span></a>
 
-          <ul class="site-nav list">
-            <li class="site-nav__item">
-              <a href="" class="site-nav--current">Студія</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
-            </li>
-            <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
-          </ul>
+          <button
+            type="button"
+            class="menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="20" height="20">
+              <!-- <use class="icon-cross" href="./images/icons.svg#icon-cross"></use> -->
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-button js-close-menu cross-btn">
+              <svg width="20" height="20">
+                <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+              </svg>
+            </button>
+            <div class="navigation">
+              <ul class="site-nav list">
+                <li class="site-nav__item">
+                  <a href="" class="site-nav--current">Студія</a>
+                </li>
+                <li class="site-nav__item">
+                  <a href="./portfolio.html" class="site-nav__link">Портфоліо</a>
+                </li>
+                <li class="site-nav__item"><a href="" class="site-nav__link">Контакти</a></li>
+              </ul>
+            </div>
+            <div class="conection">
+              <ul class="contacts list">
+                <li class="contacts__item">
+                  <a href="" class="contacts__link contacts__info">
+                    <svg class="contacts__icon-envelope">
+                      <use href="./images/icons.svg#icon-envelop"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                  <a href="mailto:info@devstudio.com" class="contacts__contacts-link"></a>
+                </li>
+
+                <li class="contacts__item">
+                  <a href="" class="contacts__link contacts__tel">
+                    <svg class="contacts__icon-smartphone">
+                      <use href="./images/icons.svg#smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="social">
+              <li class="social__list list">Instagram</li>
+              <li class="social__list list">Twitter</li>
+              <li class="social__list list">Facebook</li>
+              <li class="social__list list">LinkedIn</li>
+            </ul>
+          </div>
         </nav>
-
-        <ul class="contacts list">
-          <li class="contacts__item">
-            <a href="" class="contacts__link">
-              <svg class="contacts__icon-envelope">
-                <use href="./images/icons.svg#icon-envelop"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-            <a href="mailto:info@devstudio.com" class="contacts__contacts-link"></a>
-          </li>
-
-          <li class="contacts__item">
-            <a href="" class="contacts__link">
-              <svg class="contacts__icon-smartphone">
-                <use href="./images/icons.svg#smartphone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-            <!-- <a href="tel:+380961111111" class="contacts-link"></a> -->
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -128,14 +155,21 @@
           <ul class="work__list list">
             <li class="work__item">
               <div class="work__box">
-                <img src="./images/box_1.jpg" alt="блок-схема" width="370" height="294" />
+                <img
+                  srcset="./images/desk/box-370.jpg 1x, ./images/desk/box-740.jpg 2x"
+                  src="./images/desk/box-370.jpg"
+                  alt="блок-схема"
+                  width="370"
+                  height="294"
+                />
                 <p class="work__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="work__item">
               <div class="work__box">
                 <img
-                  src="./images/box_2.jpg"
+                  srcset="./images/desk/box2-370.jpg 1x, ./images/desk/box2-740.jpg 2x"
+                  src="./images/desk/box2-370.jpg"
                   alt="застосунок для телефону"
                   width="370"
                   height="294"
@@ -145,7 +179,13 @@
             </li>
             <li class="work__item">
               <div class="work__box">
-                <img src="./images/box_3.jpg" alt="веб дизайн" width="370" height="294" />
+                <img
+                  srcset="./images/desk/box3-370.jpg 1x, ./images/desk/box3-740.jpg 2x"
+                  src="./images/desk/box3-370.jpg"
+                  alt="веб дизайн"
+                  width="370"
+                  height="294"
+                />
                 <p class="work__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -159,7 +199,20 @@
           <h3 class="team__title">Наша команда</h3>
           <ul class="team__list list">
             <li class="team__item">
-              <img src="./images/img.jpg" alt="Product Designer" width="270" />
+              <img
+                srcset="
+                  ./images/team/igor-270.jpg 270w,
+                  ./images/team/igor-354.jpg 354w,
+                  ./images/team/igor-450.jpg 450w,
+                  ./images/team/igor-540.jpg 540w,
+                  ./images/team/igor-708.jpg 708w,
+                  ./images/team/igor-900.jpg 900w
+                "
+                src="./images/team/igor-270.jpg"
+                alt="Product Designer"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,
+                 (min-width: 480px) 100vw"
+              />
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__text">Product Designer</p>
               <div class="team__icon">
@@ -186,7 +239,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img_1.jpg" alt="Ольга Рєпіна" width="270" />
+              <img
+                srcset="
+                  ./images/team/olga-270.jpg 270w,
+                  ./images/team/olga-354.jpg 354w,
+                  ./images/team/olga-450.jpg 450w,
+                  ./images/team/olga-540.jpg 540w,
+                  ./images/team/olga-708.jpg 708w,
+                  ./images/team/olga-900.jpg 900w
+                "
+                src="./images/team/olga-270.jpg"
+                alt="Ольга Рєпіна"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,
+                 100vw"
+              />
               <h3 class="team__name">Ольга Рєпіна</h3>
               <p class="team__text">Frontend Developer</p>
               <div class="team__icon">
@@ -213,7 +279,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img_2.jpg" alt="Микола Тарасов" width="270" />
+              <img
+                srcset="
+                  ./images/team/mykola-270.jpg 270w,
+                  ./images/team/mykola-354.jpg 354w,
+                  ./images/team/mykola-450.jpg 450w,
+                  ./images/team/mykola-540.jpg 540w,
+                  ./images/team/mykola-708.jpg 708w,
+                  ./images/team/mykola-900.jpg 900w
+                "
+                src="./images/team/mykola-270.jpg"
+                alt="Микола Тарасов"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,
+                 100vw"
+              />
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__text">Marketing</p>
               <div class="team__icon">
@@ -240,7 +319,20 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/img_3.jpg" alt="Михайло Єрмаков" width="270" />
+              <img
+                srcset="
+                  ./images/team/myhailo-270.jpg 270w,
+                  ./images/team/myhailo-354.jpg 354w,
+                  ./images/team/myhailo-450.jpg 450w,
+                  ./images/team/myhailo-540.jpg 540w,
+                  ./images/team/myhailo-708.jpg 708w,
+                  ./images/team/myhailo-900.jpg 900w
+                "
+                src="./images/team/myhailo-270.jpg"
+                alt="Михайло Єрмаков"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,
+                 100vw"
+              />
               <h3 class="team__name">Михайло Єрмаков</h3>
               <p class="team__text">UI Designer</p>
               <div class="team__icon">
@@ -375,6 +467,7 @@
             </li>
           </ul>
         </div>
+
         <div class="footer-form">
           <h3 class="footer-form__text">підпішиться на розсилку</h3>
           <div class="footer-form__lable">
@@ -446,7 +539,13 @@
         </form>
       </div>
     </div>
-
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,6 +1,14 @@
 .work {
+  display: none;
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   &__title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -11,7 +19,6 @@
 
   &__list {
     display: inline-flex;
-    width: 370px;
   }
   &__item:not(:last-child) {
     margin-right: 30px;
