@@ -98,7 +98,8 @@
       margin-right: 10px;
       width: 10px;
       height: 16px;
-      color: #757575;
+      color: currentColor;
+      fill: $title-text-color;
     }
   }
   &__icon-envelope {

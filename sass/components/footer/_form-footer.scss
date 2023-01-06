@@ -1,8 +1,12 @@
 .footer-form {
+  margin-top: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 72px;
+  }
   &__text {
     margin-top: 0;
     margin-bottom: 20px;
-    padding-top: 60px;
+    // padding-top: 60px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -11,7 +15,6 @@
     color: $primary-bg-color;
     text-align: center;
     @media screen and (min-width: 1200px) {
-      padding-top: 72px;
       text-align: left;
     }
   }
