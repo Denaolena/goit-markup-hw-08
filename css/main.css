@@ -671,12 +671,14 @@ img {
   margin-right: 8px;
   width: 10px;
   height: 14px;
+  color: #757575;
 }
 @media screen and (min-width: 1200px) {
   .contacts__icon-smartphone {
     margin-right: 10px;
     width: 10px;
     height: 16px;
+    color: #757575;
   }
 }
 .contacts__icon-envelope {
@@ -1200,6 +1202,7 @@ textarea:hover, textarea:focus {
   padding-bottom: 24px;
 }
 .team__link {
+  margin-right: 10px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -1315,7 +1318,6 @@ textarea:hover, textarea:focus {
 }
 
 .footer {
-  padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
   text-align: center;
@@ -1335,6 +1337,9 @@ textarea:hover, textarea:focus {
   .footer .container {
     text-align: left;
   }
+}
+.footer__address {
+  padding-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__address {
@@ -1360,7 +1365,6 @@ textarea:hover, textarea:focus {
 
 .address {
   margin-top: 0px;
-  margin-bottom: 60px;
   font-style: normal;
   font-size: 14px;
   line-height: 1.7;
@@ -1386,21 +1390,24 @@ textarea:hover, textarea:focus {
 }
 
 .container-icon {
-  margin-bottom: 60px;
+  padding-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .container-icon {
     width: 50%;
+    padding-top: 65px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container-icon {
     width: auto;
+    padding-top: 72px;
     margin-right: 93px;
   }
 }
 .container-icon__title {
   font-weight: 700;
+  margin-top: 0;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
@@ -1437,6 +1444,9 @@ textarea:hover, textarea:focus {
 }
 
 .footer-form__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding-top: 60px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1447,6 +1457,7 @@ textarea:hover, textarea:focus {
 }
 @media screen and (min-width: 1200px) {
   .footer-form__text {
+    padding-top: 72px;
     text-align: left;
   }
 }
@@ -1464,6 +1475,7 @@ textarea:hover, textarea:focus {
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: #2f303a;
   color: #f5f4fa;
+  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .footer-form__mail {
