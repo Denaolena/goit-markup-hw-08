@@ -664,7 +664,7 @@ img {
 .contacts__icon-envelop:hover {
   fill: #2196f3;
 }
-.contacts .icon-smartphone:hover {
+.contacts__icon-smartphone:hover {
   fill: #2196f3;
 }
 .contacts__icon-smartphone {
