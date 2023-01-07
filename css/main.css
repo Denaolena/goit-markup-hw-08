@@ -678,7 +678,6 @@ img {
     margin-right: 10px;
     width: 10px;
     height: 16px;
-    color: currentColor;
     fill: #757575;
   }
 }
@@ -693,7 +692,6 @@ img {
     margin-right: 10px;
     width: 16px;
     height: 12px;
-    color: currentColor;
     fill: #757575;
   }
 }
