@@ -605,20 +605,17 @@ img {
 .contacts__tel {
   font-size: 34px;
   line-height: 1.18;
-  color: #2196f3;
 }
 @media screen and (min-width: 768px) {
   .contacts__tel {
     font-size: 12px;
     line-height: 1.16;
-    color: #757575;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts__tel {
     font-size: 14px;
     line-height: 1.14;
-    color: #757575;
   }
 }
 @media screen and (max-width: 767px) {
@@ -649,11 +646,11 @@ img {
   text-decoration: none;
   -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #757575;
+  color: #757575;
 }
 .contacts__link:hover {
   fill: #2196f3;
-}
-.contacts__link:hover {
   color: #2196f3;
 }
 @media screen and (max-width: 767px) {
@@ -671,28 +668,24 @@ img {
   margin-right: 8px;
   width: 10px;
   height: 14px;
-  fill: #757575;
 }
 @media screen and (min-width: 1200px) {
   .contacts__icon-smartphone {
     margin-right: 10px;
     width: 10px;
     height: 16px;
-    fill: #757575;
   }
 }
 .contacts__icon-envelope {
   margin-right: 8px;
   width: 14px;
   height: 10px;
-  fill: #757575;
 }
 @media screen and (min-width: 1200px) {
   .contacts__icon-envelope {
     margin-right: 10px;
     width: 16px;
     height: 12px;
-    fill: #757575;
   }
 }
 

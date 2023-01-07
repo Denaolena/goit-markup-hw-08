@@ -32,16 +32,16 @@
   &__tel {
     font-size: 34px;
     line-height: 1.18;
-    color: $accent-color;
+    // color: $accent-color;
     @media screen and (min-width: 768px) {
       font-size: 12px;
       line-height: 1.16;
-      color: $title-text-color;
+      // color: $title-text-color;
     }
     @media screen and (min-width: 1200px) {
       font-size: 14px;
       line-height: 1.14;
-      color: $title-text-color;
+      // color: $title-text-color;
     }
   }
 
@@ -70,14 +70,17 @@
     letter-spacing: 2%;
     text-decoration: none;
     transition: fill 250ms $timing-function;
+    fill: $title-text-color;
+    color: $title-text-color;
 
     &:hover {
       fill: $accent-color;
-    }
-
-    &:hover {
       color: $accent-color;
     }
+
+    // &:hover {
+    //   color: $accent-color;
+    // }
 
     & svg {
       @media screen and (max-width: 767px) {
@@ -97,26 +100,26 @@
     margin-right: 8px;
     width: 10px;
     height: 14px;
-    fill: $title-text-color;
+    // fill: $title-text-color;
 
     @media screen and (min-width: 1200px) {
       margin-right: 10px;
       width: 10px;
       height: 16px;
-      fill: $title-text-color;
+      // fill: $title-text-color;
     }
   }
   &__icon-envelope {
     margin-right: 8px;
     width: 14px;
     height: 10px;
-    fill: $title-text-color;
+    // fill: $title-text-color;
 
     @media screen and (min-width: 1200px) {
       margin-right: 10px;
       width: 16px;
       height: 12px;
-      fill: $title-text-color;
+      // fill: $title-text-color;
     }
   }
 }
