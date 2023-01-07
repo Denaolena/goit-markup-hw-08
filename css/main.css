@@ -664,14 +664,14 @@ img {
 .contacts__icon-envelop:hover {
   fill: #2196f3;
 }
-.contacts__icon-envelop:hover .icon-smartphone:hover {
+.contacts .icon-smartphone:hover {
   fill: #2196f3;
 }
 .contacts__icon-smartphone {
   margin-right: 8px;
   width: 10px;
   height: 14px;
-  color: #757575;
+  fill: #757575;
 }
 @media screen and (min-width: 1200px) {
   .contacts__icon-smartphone {
@@ -686,12 +686,15 @@ img {
   margin-right: 8px;
   width: 14px;
   height: 10px;
+  fill: #757575;
 }
 @media screen and (min-width: 1200px) {
   .contacts__icon-envelope {
     margin-right: 10px;
     width: 16px;
     height: 12px;
+    color: currentColor;
+    fill: #757575;
   }
 }
 
@@ -1319,6 +1322,7 @@ textarea:hover, textarea:focus {
 }
 
 .footer {
+  padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
   text-align: center;
@@ -1338,9 +1342,6 @@ textarea:hover, textarea:focus {
   .footer .container {
     text-align: left;
   }
-}
-.footer__address {
-  padding-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__address {
@@ -1391,24 +1392,23 @@ textarea:hover, textarea:focus {
 }
 
 .container-icon {
-  padding-top: 60px;
+  margin-top: 60px;
 }
 @media screen and (min-width: 768px) {
   .container-icon {
     width: 50%;
-    padding-top: 65px;
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .container-icon {
     width: auto;
-    padding-top: 72px;
+    margin-top: 72px;
     margin-right: 93px;
   }
 }
 .container-icon__title {
   font-weight: 700;
-  margin-top: 0;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.14;
@@ -1416,6 +1416,12 @@ textarea:hover, textarea:focus {
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .container-icon__title {
+    margin: 0;
+    margin-bottom: 20px;
+  }
 }
 .container-icon__list {
   display: -webkit-box;
